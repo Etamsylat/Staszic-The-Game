@@ -13,7 +13,7 @@ label fd_intro:
             monika "Nie poznałam cie"
             $ isNew = False
     hide monia
-#jajco
+
 
         
 
@@ -28,7 +28,7 @@ label fd_wild_somek1:
             "Podejdź":
                 jump fd_somek_talk1
             "Olej":
-                jump fd_somek_talk1
+                jump afterSomek
 
 
 
