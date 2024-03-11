@@ -14,7 +14,7 @@ label fd_intro:
             $ isNew = False
     hide monia
     
-
+#heloo
 
         
 
