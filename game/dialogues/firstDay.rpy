@@ -49,11 +49,11 @@ label fd_somek_talk2:
     somek "A, właśnie. Jak byś miał czas dzisiaj po lekcjach, to zapraszam na SKS'y z koszykówki. Możesz zapisać się u dowolnego nauczyciela WFu. Jesteś wysokiego, więc na pewno przydasz się do naszego zespołu. "
     python:
         quests.append("sksQuest")
-    hide slomek
 
 
 
 label afterSomek:
+    hide slomek
     "Hmm zostało 5 min do lekcji. Przejdę się po szkole"
     show mrok at slide_in_left_slow
     mroczny "Ej ty, Ty jesteś z klasy [classNumber]?"
