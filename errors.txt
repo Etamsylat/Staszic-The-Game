@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/dialogues/firstDay.rpy", line 61: choice menuitem expects a non-empty block.
+    "Tak":
+          ^
+
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Sun Mar 10 21:46:01 2024
