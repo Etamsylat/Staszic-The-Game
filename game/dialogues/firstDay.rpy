@@ -13,8 +13,7 @@ label fd_intro:
             monika "Nie poznałam cie"
             $ isNew = False
     hide monia
-    
-#heloo
+#what
 
         
 
