@@ -29,16 +29,16 @@ screen buttons():
         yalign 0.5
         background Color("#FFFFFF")
         text "Click Me"
-        action Function(goRight)
+        action Jump("changeBg2")
     button:
         xalign 0.0
         yalign 0.5
         background Color("#FFFFFF")
         text "Click Me"
-        action Function(goLeft)
+        action Jump("changeBg")
 
 
-    
+
 
 transform slide_in_left_fast:
     yalign 0.5
@@ -51,9 +51,20 @@ transform slide_in_left_slow:
     linear 2 xalign 0.5
 
 
+label changeBg:
+    scene bg_1    
+    jump passing
+
+label changeBg2:
+    scene bg_2  
+    jump passing
+
+label passing:
+    monika "luj"
 
 
 label start:
     show screen buttons
     
     jump fd_intro
+

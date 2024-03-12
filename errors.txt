@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 21: expected a keyword argument, colon, or end of line.
-    button "Change Background" action [renpy.call(scene bg_1)]
+File "game/script.rpy", line 38: the action keyword argument was not given a value.
+    action jump(name="changeBg")
            ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue Mar 12 16:49:28 2024
+Tue Mar 12 21:57:49 2024
