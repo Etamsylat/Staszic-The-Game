@@ -1,9 +1,10 @@
-
-
+image img1 = "imgages/bg/temp_bg/bg_13.jpg"
+scene img1
 
 label fd_intro:
     scene placeholder2
     show monia at truecenter
+
     monika "Siema nowy"
     menu:
         "Jestem nowy (Tutorial)":
@@ -12,12 +13,16 @@ label fd_intro:
         "3 lata tu chodze":
             monika "Nie poznałam cie"
             $ isNew = False
+    monika "A, z której jesteś klasy?"
+    $ classNumber = renpy.input("Wpisz Klase:")
+    monika "Dobrze, to idź już do szkoly. Za chwile zaczyna sie lekcja"
     hide monia
 
 
         
 
 label fd_wild_somek1:
+
     "Wild somek appears"
     show slomek at slide_in_left_fast
     $ somekRep = 0
