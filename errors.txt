@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/dialogues/firstDay.rpy", line 61: choice menuitem expects a non-empty block.
-    "Tak":
-          ^
+File "game/script.rpy", line 21: expected a keyword argument, colon, or end of line.
+    button "Change Background" action [renpy.call(scene bg_1)]
+           ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Sun Mar 10 21:46:01 2024
+Tue Mar 12 16:49:28 2024

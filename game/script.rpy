@@ -13,29 +13,32 @@ init python:
     def goRight():
         # This function will be called when the button is clicked
         # Add your code here
+        renpy.show("bg_2")
         
         pass  # Placeholder for your code
     def goLeft():
         # This function will be called when the button is clicked
         # Add your code here
+        renpy.show("bg_1")
         
         pass  # Placeholder for your code
 
-screen rightBtn():
+screen buttons():
     button:
         xalign 1.0
         yalign 0.5
         background Color("#FFFFFF")
         text "Click Me"
         action Function(goRight)
-
-screen leftBtn():
     button:
         xalign 0.0
         yalign 0.5
         background Color("#FFFFFF")
         text "Click Me"
         action Function(goLeft)
+
+
+    
 
 transform slide_in_left_fast:
     yalign 0.5
@@ -51,6 +54,6 @@ transform slide_in_left_slow:
 
 
 label start:
-    show screen rightBtn
-    show screen leftBtn
+    show screen buttons
+    
     jump fd_intro
