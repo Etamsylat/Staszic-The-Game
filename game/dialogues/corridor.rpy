@@ -21,7 +21,8 @@ label corridor_2:
 
 label corridor_3:
     scene bg_3
-    jump passing
+    pause 1
+    jump corridor_3
 
 label corridor_4:
     scene bg_4
