@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dialogues/firstDay.rpy", line 8, in script
-    monika "Siema nowy"
-ScriptError: could not find label 'corridor_0'.
+  File "game/dialogues/corridor.rpy", line 8, in script
+    $ renpy.jump("crridor_" + str(position))
+ScriptError: could not find label 'crridor_5'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\bootstrap.py", line 359, in bootstrap
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\main.py", line 635, in main
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
     run(restart)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\main.py", line 145, in run
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\main.py", line 145, in run
     renpy.execution.run_context(True)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\execution.py", line 955, in run_context
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
     context.run()
-  File "game/dialogues/firstDay.rpy", line 8, in script
-    monika "Siema nowy"
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\script.py", line 1103, in lookup
+  File "game/dialogues/corridor.rpy", line 8, in script
+    $ renpy.jump("crridor_" + str(position))
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'corridor_0'.
+ScriptError: could not find label 'crridor_5'.
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
 Staszic The Game 1.0
-Wed Mar 13 19:13:31 2024
+Wed Mar 13 21:19:30 2024

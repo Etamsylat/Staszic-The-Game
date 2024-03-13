@@ -9,7 +9,6 @@ define mroczny = Character(name="Dariusz Mroczek")
 
 define quests = []
 
-define position = 1
 define bg_name = ""
 
 define classNumber="2a"
@@ -37,14 +36,14 @@ screen buttons():
         yalign 0.5
         background Color("#FFF0FF")
         text "Click Me"
-        action SetVariable(position,position+1) and Jump("corridor_" + str(position))
+        action Jump("add")
         
     button:
         xalign 0.0
         yalign 0.5
         background Color("#FF0FFF")
         text "Click Me"
-        action Jump("changeBg")
+        action Jump("sub")
 
 
 
@@ -59,14 +58,6 @@ transform slide_in_left_slow:
     xalign 0.0
     linear 2 xalign 0.5
 
-
-label changeBg:
-    scene bg_1    
-    jump passing
-
-label changeBg2:
-    scene bg_2  
-    jump passing
 
 label passing:
     monika "luj"

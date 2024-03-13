@@ -1,17 +1,35 @@
+define position = 0
+
+label add:
+    $ position = position + 1
+    jump changeBg
+
+label sub:
+    $ position = position - 1
+    jump changeBg
+
+label changeBg:
+    $ renpy.jump("corridor_" + str(position))
+
 label corridor_1:
     scene bg_1
+    jump passing
 
 label corridor_2:
     scene bg_2
+    jump passing
 
 label corridor_3:
     scene bg_3
+    jump passing
 
 label corridor_4:
     scene bg_4
+    jump passing
 
 label corridor_5:
     scene bg_5
+    jump passing
 
 label corridor_6:
     scene bg_6
