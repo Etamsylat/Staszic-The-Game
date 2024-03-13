@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: the action keyword argument was not given a value.
-    action jump(name="changeBg")
-           ^
+File "game/script.rpy", line 41: keyword argument 'action' appears more than once in a button statement.
+    action Jump(bg_name)
+          ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Tue Mar 12 21:57:49 2024
+Wed Mar 13 19:09:02 2024

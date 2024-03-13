@@ -8,12 +8,20 @@ define ssporon = Character(name="Kazimierz Sporoń")
 define mroczny = Character(name="Dariusz Mroczek")
 
 define quests = []
+
+define position = 1
+define bg_name = ""
+
 define classNumber="2a"
 init python:
     def goRight():
         # This function will be called when the button is clicked
         # Add your code here
-        renpy.show("bg_2")
+        if position != 6 and position != 11 and position != 16 and position !=22:   
+            position+=1
+            bg_name = "corridor_" + string(position)
+            
+
         
         pass  # Placeholder for your code
     def goLeft():
@@ -27,13 +35,14 @@ screen buttons():
     button:
         xalign 1.0
         yalign 0.5
-        background Color("#FFFFFF")
+        background Color("#FFF0FF")
         text "Click Me"
-        action Jump("changeBg2")
+        action SetVariable(position,position+1) and Jump("corridor_" + str(position))
+        
     button:
         xalign 0.0
         yalign 0.5
-        background Color("#FFFFFF")
+        background Color("#FF0FFF")
         text "Click Me"
         action Jump("changeBg")
 
