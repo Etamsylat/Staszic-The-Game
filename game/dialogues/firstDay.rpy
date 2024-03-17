@@ -5,7 +5,7 @@ label fd_intro:
     scene bg_2
     $ position = 2
     show monia at truecenter
-
+    hide screen buttons
     monika "Siema nowy"
     menu:
         "Jestem nowy (Tutorial)":
@@ -18,6 +18,7 @@ label fd_intro:
     $ classNumber = renpy.input("Wpisz Klase:")
     monika "Dobrze, to idź już do szkoly. Za chwile zaczyna sie lekcja"
     hide monia
+    show screen buttons
 
 
         
