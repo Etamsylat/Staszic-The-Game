@@ -26,7 +26,6 @@ init python:
     def goLeft():
         # This function will be called when the button is clicked
         # Add your code here
-        renpy.show("bg_1")
         
         pass  # Placeholder for your code
 
