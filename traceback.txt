@@ -1,9 +1,9 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dialogues/corridor.rpy", line 12, in script
-    $ renpy.jump("corridor_" + str(position))
-ScriptError: could not find label 'corridor_0'.
+  File "game/script.rpy", line 76, in script
+    monika "luj"
+ScriptError: could not find label 'up'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -16,13 +16,13 @@ Full traceback:
     renpy.execution.run_context(True)
   File "D:\downloads\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
     context.run()
-  File "game/dialogues/corridor.rpy", line 12, in script
-    $ renpy.jump("corridor_" + str(position))
+  File "game/script.rpy", line 76, in script
+    monika "luj"
   File "D:\downloads\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'corridor_0'.
+ScriptError: could not find label 'up'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Staszic The Game 1.0
-Sun Mar 17 22:24:47 2024
+Sun Mar 17 22:34:04 2024

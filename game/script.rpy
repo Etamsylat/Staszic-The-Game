@@ -33,16 +33,30 @@ screen buttons():
     button:
         xalign 1.0
         yalign 0.5
-        background Color("#FFF0FF")
+        background Color("#66cc00")
         text "Click Me"
         action Jump("add")
         
     button:
         xalign 0.0
         yalign 0.5
-        background Color("#FF0FFF")
+        background Color("#66cc00")
         text "Click Me"
         action Jump("sub")
+
+    button:
+        xalign 0.5
+        yalign 0.0
+        background Color("#66cc00")
+        text "Click Me"
+        action Jump("up")
+
+    button:
+        xalign 0.5
+        yalign 0.7
+        background Color("#66cc00")
+        text "Click Me"
+        action Jump("down")
 
 
 
@@ -59,7 +73,7 @@ transform slide_in_left_slow:
 
 
 label passing:
-    monika "luj"
+    monika "[position]"
 
 
 label start:

@@ -2,7 +2,8 @@ image img1 = "imgages/bg/temp_bg/bg_13.jpg"
 scene img1
 
 label fd_intro:
-    scene placeholder2
+    scene bg_2
+    $ position = 2
     show monia at truecenter
 
     monika "Siema nowy"
