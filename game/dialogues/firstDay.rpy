@@ -69,6 +69,7 @@ label ssporonEncounter1:
     python:
         inventory_items.append("key")
         quests.remove("mrokQuest")
+        quests.append("mrokQuest2")
     hide ksporon
     call show_buttons
     jump passing
@@ -77,6 +78,7 @@ label mrocznyBackWithKey:
     show mrok at slide_in_left_slow
     python:
         inventory_items.remove("key")
+        quests.remove("mrokQuest2")
         
     "Mam klucze do sali"
     "To dobrze"

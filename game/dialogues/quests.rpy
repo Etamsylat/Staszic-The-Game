@@ -29,7 +29,7 @@ label hideScreenInv:
 
 
 
-default quest_descriptions = {"key" : "a mysterious key", "bottle" : "it's full of... something", "broom" : "it sweeps. or rather, you do. with it.", "Cholula" : "yum!"}
+default quest_descriptions = {"mrokQuest" : "Bardzo mroczne zadanie","mrokQuest2":"Jeszcze mroczniejsze zadanie"}
 default quests = []
 default quest_description = ""
 
