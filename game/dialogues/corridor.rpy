@@ -41,6 +41,8 @@ label hide_buttons:
     hide screen button_left
     hide screen button_up
     hide screen button_down
+    hide screen inventory_display_toggle
+    hide screen quests_display_toggle
     return
 
 label show_buttons:
@@ -60,6 +62,9 @@ label show_buttons:
         show screen button_down
     else:
         hide screen button_down
+
+    show screen inventory_display_toggle
+    show screen quests_display_toggle
     return 
 
 label corridor_0:

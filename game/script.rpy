@@ -65,6 +65,6 @@ label passing:
 label start:
     show screen inventory_display_toggle
     show screen quests_display_toggle
-    $ inventory_items.append("key")
+    
     jump fd_intro
 

@@ -59,15 +59,25 @@ label mrok_quest:
 
 label ssporonEncounter1:
     show ksporon at slide_in_left_slow
+    call hide_buttons
     "Dzień dobry czy mogłbym prosić klucze do sali 27?"
     ssporon "A z kim masz tam teraz lekcje?"
     "Z Profesorem Mroczkiem"
     ssporon "Dobrze to trzymaj"
     
     "Otrzymano klucz z sali 27"
+    python:
+        inventory_items.append("key")
+        quests.remove("mrokQuest")
+    hide ksporon
+    call show_buttons
     jump passing
     
 label mrocznyBackWithKey:
+    show mrok at slide_in_left_slow
+    python:
+        inventory_items.remove("key")
+        
     "Mam klucze do sali"
     "To dobrze"
     jump passing
