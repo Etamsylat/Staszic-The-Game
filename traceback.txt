@@ -1,81 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dialogues/firstDay.rpy", line 9, in script
-    monika "Siema nowy"
-  File "game/dialogues/firstDay.rpy", line 9, in script
-    monika "Siema nowy"
-  File "game/dialogues/quests.rpy", line 26, in execute
-    screen inventory_item_description:
-  File "game/dialogues/quests.rpy", line 26, in execute
-    screen inventory_item_description:
-  File "game/dialogues/quests.rpy", line 29, in execute
-    window:
-  File "game/dialogues/quests.rpy", line 35, in execute
-    text item_description:
-Exception: Cannot display None as text.
+  File "game/script.rpy", line 65, in script
+    show screen buttons
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+Exception: Screen buttons is not known.
+
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\main.py", line 635, in main
-    run(restart)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\main.py", line 145, in run
-    renpy.execution.run_context(True)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\execution.py", line 955, in run_context
-    context.run()
-  File "game/dialogues/firstDay.rpy", line 9, in script
-    monika "Siema nowy"
-  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
-  File "game/dialogues/firstDay.rpy", line 9, in script
-    monika "Siema nowy"
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
-    display_say(who,
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/dialogues/quests.rpy", line 26, in execute
-    screen inventory_item_description:
-  File "game/dialogues/quests.rpy", line 26, in execute
-    screen inventory_item_description:
-  File "game/dialogues/quests.rpy", line 29, in execute
-    window:
-  File "game/dialogues/quests.rpy", line 35, in execute
-    text item_description:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\text\text.py", line 1717, in __init__
-    raise Exception("Cannot display {0!r} as text.".format(i))
-Exception: Cannot display None as text.
+  File "game/script.rpy", line 65, in script
+    show screen buttons
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
+    self.call("execute")
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
+    renpy.show_screen(name, *args, **kwargs)
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\display\screen.py", line 1322, in show_screen
+    raise Exception("Screen %s is not known.\n" % (name[0],))
+Exception: Screen buttons is not known.
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
 Staszic The Game 1.0
-Mon Mar 18 15:15:16 2024
+Mon Mar 18 17:07:29 2024

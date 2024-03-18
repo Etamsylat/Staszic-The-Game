@@ -14,28 +14,28 @@ define bg_name = ""
 define classNumber="2a"
 
 
-screen buttons():
+screen button_right():
     button:
         xalign 1.0
         yalign 0.5
         background Color("#66cc00")
         text "Click Me"
         action Jump("add")
-        
+screen button_left():
     button:
         xalign 0.0
         yalign 0.5
         background Color("#66cc00")
         text "Click Me"
         action Jump("sub")
-
+screen button_up():
     button:
         xalign 0.5
         yalign 0.0
         background Color("#66cc00")
         text "Click Me"
         action Jump("up")
-
+screen button_down():
     button:
         xalign 0.5
         yalign 0.7
@@ -62,7 +62,6 @@ label passing:
 
 
 label start:
-    show screen buttons
     show screen inventory_display_toggle
     $ inventory_items.append("key")
     jump fd_intro
