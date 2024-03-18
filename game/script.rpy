@@ -7,7 +7,7 @@ define popi = Character(name="Małgorzata Popławska")
 define ssporon = Character(name="Kazimierz Sporoń")
 define mroczny = Character(name="Dariusz Mroczek")
 
-define quests = []
+
 
 define bg_name = ""
 
@@ -64,6 +64,7 @@ label passing:
 
 label start:
     show screen inventory_display_toggle
+    show screen quests_display_toggle
     $ inventory_items.append("key")
     jump fd_intro
 

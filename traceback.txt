@@ -1,32 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 65, in script
-    show screen buttons
-  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-Exception: Screen buttons is not known.
-
+  File "game/dialogues/quests.rpy", line 17, in script
+    monia "wal sie"
+Exception: Sayer 'monia' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 65, in script
-    show screen buttons
-  File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1968, in execute
-    self.call("execute")
-  File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1950, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\downloads\renpy-8.2.1-sdk\renpy\statements.py", line 349, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 647, in execute_show_screen
-    renpy.show_screen(name, *args, **kwargs)
-  File "D:\downloads\renpy-8.2.1-sdk\renpy\display\screen.py", line 1322, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen buttons is not known.
+  File "game/dialogues/quests.rpy", line 17, in script
+    monia "wal sie"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'monia' is not defined.
 
-
-Windows-10-10.0.22631 AMD64
-Ren'Py 8.2.1.24030407
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.2.0.24012702
 Staszic The Game 1.0
-Mon Mar 18 17:07:29 2024
+Mon Mar 18 20:50:40 2024

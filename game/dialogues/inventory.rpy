@@ -6,9 +6,25 @@ screen inventory_display_toggle:
         yalign 0.1
 
         textbutton "Inventory":
-            action ToggleScreen("inventory_item_description")
+            action Jump("hideScreenQue")
 
-    on "hide" action Hide("inventory_item_description")
+    
+
+define inventoryScreen = True   
+   
+
+label hideScreenQue:
+    if inventoryScreen == True:
+        $ inventoryScreen = False
+        hide screen inventory_item_description
+    else:
+        $ inventoryScreen = True
+        $ questScreen = False
+        show screen inventory_item_description
+    
+    hide screen quest_description
+    jump passing
+
 
 
 default item_descriptions = {"key" : "a mysterious key", "bottle" : "it's full of... something", "broom" : "it sweeps. or rather, you do. with it.", "Cholula" : "yum!"}

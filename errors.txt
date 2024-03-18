@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/dialogues/corridor.rpy", line 9: if statement expects a non-empty block.
-    if position != 0 or position != 5 or position != 10 or position != 16:
-                                                                          ^
+The label hideScreenInv is defined twice, at File "game/dialogues/inventory.rpy", line 16:
+label hideScreenInv:
+and File "game/dialogues/quests.rpy", line 16:
+label hideScreenInv:
 
-Ren'Py Version: Ren'Py 8.2.1.24030407
-Sun Mar 17 22:53:51 2024
+
+Ren'Py Version: Ren'Py 8.2.0.24012702
+Mon Mar 18 21:00:30 2024
