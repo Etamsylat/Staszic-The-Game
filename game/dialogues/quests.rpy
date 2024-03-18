@@ -5,13 +5,13 @@ screen inventory_display_toggle:
         xalign 0.05
         yalign 0.1
 
-        textbutton "Inventory":
+        textbutton "Ekwipunek":
             action ToggleScreen("inventory_item_description")
 
     on "hide" action Hide("inventory_item_description")
 
 
-default item_descriptions = {"key" : "a mysterious key", "bottle" : "it's full of... something", "broom" : "it sweeps. or rather, you do. with it.", "Cholula" : "yum!","Butelka moczu Kazika":"Szczyny"}
+default item_descriptions = {"Butelka moczu Kazika":"Szczyny"}
 default inventory_items = []
 default item_description = ""
 
