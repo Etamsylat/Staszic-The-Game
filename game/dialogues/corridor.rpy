@@ -1,11 +1,11 @@
 define position = 0
 
-label add:
+label sub:
     if position != 4 and position != 9 and position != 15 and position != 21:
         $ position = position + 1
     jump changeBg
 
-label sub:
+label add:
     if position != 0 and position != 5 and position != 10 and position != 16:
         $ position = position - 1
     jump changeBg

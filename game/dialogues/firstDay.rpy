@@ -86,7 +86,7 @@ label ssporonEncounter1:
     ssporon "A z kim masz tam teraz lekcje?"
     "Z Profesorem Mroczkiem"
     ssporon "Dobrze to trzymaj"
-    $ inventory_items.append("Klucz s.27")
+    
     "Otrzymano klucz z sali 27"
     
 label mrocznyBackWithKey:
