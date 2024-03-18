@@ -29,6 +29,7 @@ label down:
     jump changeBg
 
 label changeBg:
+    call show_buttons
     $ renpy.jump("corridor_" + str(position))
     #if position != 4 and position != 9 and position != 15 and position != 21:
         #show scene button_right
@@ -43,10 +44,22 @@ label hide_buttons:
     return
 
 label show_buttons:
-    show screen button_right
-    show screen button_left
-    show screen button_up
-    show screen button_down
+    if position != 4 and position != 9 and position != 15 and position != 21:
+        show screen button_left
+    else:
+        hide screen button_left
+    if position != 0 and position != 5 and position != 10 and position != 16:
+        show screen button_right
+    else:
+        hide screen button_right
+    if position == 2 or position == 7 or position == 12:
+        show screen button_up
+    else:
+        hide screen button_up
+    if position == 18 or position == 7 or position == 12:
+        show screen button_down
+    else:
+        hide screen button_down
     return 
 
 label corridor_0:

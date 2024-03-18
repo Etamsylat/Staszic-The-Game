@@ -59,6 +59,7 @@ transform slide_in_left_slow:
 
 label passing:
     monika "[position]"
+    jump passing
 
 
 label start:
