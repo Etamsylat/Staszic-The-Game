@@ -6,6 +6,7 @@ label fd_intro:
     $ position = 24
     "Podchodzi do ciebie Tomek Starczyński, czlonek samorządu naszej wspanalej szkoly"
     show slomek at slide_in_left_fast
+    play audio announcement_sound
     somek "Siema, jesteś nowy?"
     menu:
         "Tak, jestem nowy (Tutorial)":
@@ -24,21 +25,25 @@ label tutorial:
     scene bg_7
     $ position = 7
     show slomek at slide_in_left_fast
+    play audio announcement_sound
     somek "Teraz znajdujemy sie na parterze."
     somek "Znajdziesz tu Biblioteke i Gabinet Higienistki"
     scene bg_12
     $ position = 12
     show slomek at slide_in_left_fast
+    play audio announcement_sound
     somek "Weszlismy na Pierwsze Pietro."
     somek "Na lewo jest Pokój Nauczycielski wraz z Sekretariatem."
     scene bg_19
     $ position = 19
     show slomek at slide_in_left_fast
+    play audio announcement_sound
     somek "Doszliśmy na Drugie Pietro"
     somek "Jest tu nasza Aula i Golebnik"
     scene bg_2
     $ position = 2
     show slomek at slide_in_left_fast
+    play audio announcement_sound
     somek "Na końec zeszlismy na pólpietro"
     somek "To chyba wszystko co mialem Ci do pokazania"
     jump intro_name_class

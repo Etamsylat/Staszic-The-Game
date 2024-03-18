@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-The label hideScreenInv is defined twice, at File "game/dialogues/inventory.rpy", line 16:
-label hideScreenInv:
-and File "game/dialogues/quests.rpy", line 16:
-label hideScreenInv:
-
+File "game/script.rpy", line 50: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    play announcement_sound
+                           ^
 
 Ren'Py Version: Ren'Py 8.2.0.24012702
-Mon Mar 18 21:00:30 2024
+Mon Mar 18 23:18:14 2024

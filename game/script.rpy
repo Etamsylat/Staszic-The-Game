@@ -47,6 +47,7 @@ screen button_down():
 
 
 transform slide_in_left_fast:
+    
     yalign 0.5
     xalign 0.0
     linear .1 xalign 0.5
@@ -65,6 +66,6 @@ label passing:
 label start:
     show screen inventory_display_toggle
     show screen quests_display_toggle
-    
+    play music vntrack01 volume 0.2
     jump fd_intro
 
