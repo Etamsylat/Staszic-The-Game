@@ -2,8 +2,8 @@ image img1 = "imgages/bg/temp_bg/bg_13.jpg"
 scene img1
 
 label fd_intro:
-    scene bg_2
-    $ position = 2
+    scene bg_24
+    $ position = 24
     "Podchodzi do ciebie Tomek Starczyński, czlonek samorządu naszej wspanalej szkoly"
     show slomek at slide_in_left_fast
     somek "Siema, jesteś nowy?"
@@ -19,6 +19,29 @@ label fd_intro:
     jump intro_name_class
 
 label tutorial:
+    somek "Jestesmy wlasnie przed szkolą."
+    somek "Na prawo jest wejscie do szkoly, a lewo semgment WF'u."
+    scene bg_7
+    $ position = 7
+    show slomek at slide_in_left_fast
+    somek "Teraz znajdujemy sie na parterze."
+    somek "Znajdziesz tu Biblioteke i Gabinet Higienistki"
+    scene bg_12
+    $ position = 12
+    show slomek at slide_in_left_fast
+    somek "Weszlismy na Pierwsze Pietro."
+    somek "Na lewo jest Pokój Nauczycielski wraz z Sekretariatem."
+    scene bg_19
+    $ position = 19
+    show slomek at slide_in_left_fast
+    somek "Doszliśmy na Drugie Pietro"
+    somek "Jest tu nasza Aula i Golebnik"
+    scene bg_2
+    $ position = 2
+    show slomek at slide_in_left_fast
+    somek "Na końec zeszlismy na pólpietro"
+    somek "To chyba wszystko co mialem Ci do pokazania"
+    jump intro_name_class
         
 label intro_name_class:
     somek "To Jak masz na imie?"
