@@ -11,7 +11,7 @@ screen inventory_display_toggle:
     on "hide" action Hide("inventory_item_description")
 
 
-default item_descriptions = {"Butelka moczu Kazika":"Szczyny"}
+default item_descriptions = {"Butelka moczu Kazika":"Szczyny","Klucz s.27":"Klucz otwierający salę 27"}
 default inventory_items = []
 default item_description = ""
 
