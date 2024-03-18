@@ -12,22 +12,7 @@ define quests = []
 define bg_name = ""
 
 define classNumber="2a"
-init python:
-    def goRight():
-        # This function will be called when the button is clicked
-        # Add your code here
-        if position != 6 and position != 11 and position != 16 and position !=22:   
-            position+=1
-            bg_name = "corridor_" + string(position)
-            
 
-        
-        pass  # Placeholder for your code
-    def goLeft():
-        # This function will be called when the button is clicked
-        # Add your code here
-        
-        pass  # Placeholder for your code
 
 screen buttons():
     button:
