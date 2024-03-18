@@ -63,7 +63,7 @@ label passing:
 
 label start:
     show screen buttons
-    
-    
+    show screen inventory_display_toggle
+    $ inventory_items.append("key")
     jump fd_intro
 
