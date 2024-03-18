@@ -124,7 +124,10 @@ label corridor_10:
 
 label corridor_11:
     scene bg_11
-    jump mrok_quest
+    if "mrokQuest" in quests or "mrokQuest2" in quests or "mrokQuestDone" in quests:
+        jump passing
+    else:
+        jump mrok_quest
 
 label corridor_12:
     scene bg_12

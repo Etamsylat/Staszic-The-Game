@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 61, in script
+  File "game/script.rpy", line 62, in script
     monika "[position]"
   File "game/dialogues/quests.rpy", line 44, in execute
     screen quest_description:
@@ -16,7 +16,7 @@ Exception: Cannot display None as text.
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 61, in script
+  File "game/script.rpy", line 62, in script
     monika "[position]"
   File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
@@ -65,4 +65,4 @@ Exception: Cannot display None as text.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 Staszic The Game 1.0
-Mon Mar 18 22:31:31 2024
+Mon Mar 18 23:36:06 2024

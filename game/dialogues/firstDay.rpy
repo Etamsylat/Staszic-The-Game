@@ -107,6 +107,7 @@ label mrocznyBackWithKey:
     python:
         inventory_items.remove("key")
         quests.remove("mrokQuest2")
+        quests.append("mrokQuestDone")
         
     "Mam klucze do sali"
     "To dobrze"
