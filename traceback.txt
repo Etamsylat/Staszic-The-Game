@@ -1,24 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dialogues/quests.rpy", line 17, in script
-    monia "wal sie"
-Exception: Sayer 'monia' is not defined.
+  File "game/dialogues/corridor.rpy", line 130, in script
+    if "key" in inventory:
+  File "game/dialogues/corridor.rpy", line 130, in <module>
+    if "key" in inventory:
+NameError: name 'inventory' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/dialogues/quests.rpy", line 17, in script
-    monia "wal sie"
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'monia' is not defined.
+  File "game/dialogues/corridor.rpy", line 130, in script
+    if "key" in inventory:
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1842, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\downloads\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/dialogues/corridor.rpy", line 130, in <module>
+    if "key" in inventory:
+NameError: name 'inventory' is not defined
 
-Windows-10-10.0.19045 AMD64
-Ren'Py 8.2.0.24012702
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
 Staszic The Game 1.0
-Mon Mar 18 20:50:40 2024
+Mon Mar 18 21:50:04 2024

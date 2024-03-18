@@ -108,7 +108,7 @@ label corridor_10:
 
 label corridor_11:
     scene bg_11
-    jump passing
+    jump mrok_quest
 
 label corridor_12:
     scene bg_12
@@ -116,7 +116,10 @@ label corridor_12:
 
 label corridor_13:
     scene bg_13
-    jump passing
+    if "mrokQuest" in quests:
+        jump ssporonEncounter1
+    else:
+        jump passing
 
 label corridor_14:
     scene bg_14
@@ -124,7 +127,11 @@ label corridor_14:
 
 label corridor_15:
     scene bg_15
-    jump passing
+    if "key" in inventory_items:
+        jump mrocznyBackWithKey
+    else:
+        jump passing
+
 
 label corridor_16:
     scene bg_16

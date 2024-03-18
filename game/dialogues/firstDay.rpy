@@ -4,64 +4,43 @@ scene img1
 label fd_intro:
     scene bg_2
     $ position = 2
-    show monia at truecenter
-    call hide_buttons
-    monika "Siema nowy"
-    menu:
-        "Jestem nowy (Tutorial)":
-            monika "Wal sie"
-            $ isNew = True
-        "3 lata tu chodze":
-            monika "Nie poznałam cie"
-            $ isNew = False
-    monika "A, z której jesteś klasy?"
-    $ classNumber = renpy.input("Wpisz Klase:")
-    monika "Dobrze, to idź już do szkoly. Za chwile zaczyna sie lekcja"
-    hide monia
-    call show_buttons
-
-
-        
-
-label fd_wild_somek1:
-
-    "Wild somek appears"
+    "Podchodzi do ciebie Tomek Starczyński, czlonek samorządu naszej wspanalej szkoly"
     show slomek at slide_in_left_fast
-    $ somekRep = 0
-    if isNew:
-        jump fd_somek_talk1
-    else:
-        menu:
-            "Podejdź":
-                jump fd_somek_talk1
-            "Olej":
-                jump afterSomek
+    somek "Siema, jesteś nowy?"
+    menu:
+        "Tak, jestem nowy (Tutorial)":
+            somek "Wal sie"
+            somek "To chodź. Oprowadze Cie po szkole"
+            jump tutorial
+        "Nie jestem nowy":
+            somek "O, sorry. Nie widzialem Cie wczesniej"
+            $ isNew = False
 
+    jump intro_name_class
 
+label tutorial:
+        
+label intro_name_class:
+    somek "To Jak masz na imie?"
+    $ playerName = renpy.input("Wpisz imię:")
+    somek "A, z której jesteś klasy?"
+    $ classNumber = renpy.input("Wpisz Klase:")
+    jump intro_sksQuest
 
-label fd_somek_talk1:
-    $ somekRep+=2
-    somek "Siema, jestem Tomek Starczyński, przewodniczący szkoły."
-    if isNew:
-        somek "Jak się nazywasz?"
-        $ playerName = renpy.input("Wpisz imię:")
-    else:
-        somek "Ciebie kojarzę z widzenia, jak masz na imię?"
-        $ playerName = renpy.input("Wpisz imię:")
-    
-    
-
-
-label fd_somek_talk2:
+label intro_sksQuest:
     somek "A, właśnie. Jak byś miał czas dzisiaj po lekcjach, to zapraszam na SKS'y z koszykówki. Możesz zapisać się u dowolnego nauczyciela WFu. Jesteś wysokiego, więc na pewno przydasz się do naszego zespołu. "
     python:
         quests.append("sksQuest")
+    jump intro_end
 
-
-
-label afterSomek:
+label intro_end:
     hide slomek
     "Hmm zostało 5 min do lekcji. Przejdę się po szkole"
+    call show_buttons
+    jump passing
+
+label mrok_quest:
+    call hide_buttons
     show mrok at slide_in_left_slow
     mroczny "Ej ty, Ty jesteś z klasy [classNumber]?"
     $ mrokRep = 0
@@ -74,11 +53,9 @@ label afterSomek:
     python:
         quests.append("mrokQuest")
     hide mrok
+    call show_buttons
+    jump passing
     
-
-
-
-
 
 label ssporonEncounter1:
     show ksporon at slide_in_left_slow
@@ -88,8 +65,10 @@ label ssporonEncounter1:
     ssporon "Dobrze to trzymaj"
     
     "Otrzymano klucz z sali 27"
+    jump passing
     
 label mrocznyBackWithKey:
     "Mam klucze do sali"
     "To dobrze"
+    jump passing
     
