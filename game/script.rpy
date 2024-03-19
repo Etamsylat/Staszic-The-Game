@@ -64,8 +64,7 @@ label passing:
 
 
 label start:
-    show screen inventory_display_toggle
-    show screen quests_display_toggle
+    
     play music vntrack01 volume 0.2
     jump fd_intro
 
