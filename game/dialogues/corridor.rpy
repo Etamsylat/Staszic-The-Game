@@ -202,7 +202,10 @@ label corridor_27:
 
 label corridor_28:
     scene bg_28
-    jump passing
+    if "sksQuest" in quests:
+        jump intoSks1
+    else:
+        jump passing
 
 
 

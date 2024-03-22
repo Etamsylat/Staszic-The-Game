@@ -1,11 +1,8 @@
-image img1 = "imgages/bg/temp_bg/bg_13.jpg"
-scene img1
-
 label fd_intro:
     scene bg_24
     $ position = 24
     "Podchodzi do ciebie Tomek Starczyński, czlonek samorządu naszej wspanalej szkoly"
-    show slomek at slide_in_left_fast
+    show starczynski_t at slide_in_left_fast 
     play audio announcement_sound
     somek "Siema, jesteś nowy?"
     menu:
@@ -24,25 +21,25 @@ label tutorial:
     somek "Na prawo jest wejscie do szkoly, a lewo semgment WF'u."
     scene bg_7
     $ position = 7
-    show slomek at slide_in_left_fast
+    show starczynski_t at slide_in_left_fast
     play audio announcement_sound
     somek "Teraz znajdujemy sie na parterze."
     somek "Znajdziesz tu Biblioteke i Gabinet Higienistki"
     scene bg_12
     $ position = 12
-    show slomek at slide_in_left_fast
+    show starczynski_t at slide_in_left_fast
     play audio announcement_sound
     somek "Weszlismy na Pierwsze Pietro."
     somek "Na lewo jest Pokój Nauczycielski wraz z Sekretariatem."
     scene bg_19
     $ position = 19
-    show slomek at slide_in_left_fast
+    show starczynski_t at slide_in_left_fast
     play audio announcement_sound
     somek "Doszliśmy na Drugie Pietro"
     somek "Jest tu nasza Aula i Golebnik"
     scene bg_2
     $ position = 2
-    show slomek at slide_in_left_fast
+    show starczynski_t at slide_in_left_fast
     play audio announcement_sound
     somek "Na końec zeszlismy na pólpietro"
     somek "To chyba wszystko co mialem Ci do pokazania"
@@ -57,6 +54,9 @@ label intro_name_class:
 
 label intro_sksQuest:
     somek "A, właśnie. Jak byś miał czas dzisiaj po lekcjach, to zapraszam na SKS'y z koszykówki. Możesz zapisać się u dowolnego nauczyciela WFu. Jesteś wysokiego, więc na pewno przydasz się do naszego zespołu. "
+    somek "Dobra. Milo Cie bylo poznać, ale ide juz na lekcje."
+    somek "Powodzenia"
+    hide starczynski_t
     python:
         quests.append("sksQuest")
     jump intro_end
@@ -110,6 +110,7 @@ label mrocznyBackWithKey:
         quests.append("mrokQuestDone")
         
     "Mam klucze do sali"
-    "To dobrze"
+    mroczny "To dobrze"
+    mroczny "Zaraz zadzwoni. Wchodźmy do klasy"
     jump passing
     
