@@ -10,7 +10,7 @@ screen inventory_display_toggle:
 
     
 
-define inventoryScreen = True   
+define inventoryScreen = False 
    
 
 label hideScreenQue:

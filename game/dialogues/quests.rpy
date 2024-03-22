@@ -10,7 +10,7 @@ screen quests_display_toggle:
             action Jump("hideScreenInv")
             
 
-define questScreen = True   
+define questScreen = False  
    
 
 label hideScreenInv:
