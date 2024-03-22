@@ -69,7 +69,7 @@ label intro_end:
 
 label mrok_quest:
     call hide_buttons
-    show mrok at slide_in_left_slow
+    show sporon_m at truecenter
     mroczny "Ej ty, Ty jesteś z klasy [classNumber]?"
     $ mrokRep = 0
     menu:
@@ -103,7 +103,7 @@ label ssporonEncounter1:
     jump passing
     
 label mrocznyBackWithKey:
-    show mrok at slide_in_left_slow
+    show sporon_m at truecenter
     python:
         inventory_items.remove("key")
         quests.remove("mrokQuest2")

@@ -5,7 +5,7 @@ define monika = Character(name="monia")
 define somek = Character(name="Tomek Starczyński")
 define popi = Character(name="Małgorzata Popławska")
 define ssporon = Character(name="Kazimierz Sporoń")
-define mroczny = Character(name="Dariusz Mroczek")
+define mroczny = Character(name="Michał Sporoń")
 
 
 
