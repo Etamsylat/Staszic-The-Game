@@ -1,68 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 62, in script
-    monika "[position]"
-  File "game/dialogues/quests.rpy", line 44, in execute
-    screen quest_description:
-  File "game/dialogues/quests.rpy", line 44, in execute
-    screen quest_description:
-  File "game/dialogues/quests.rpy", line 49, in execute
-    window:
-  File "game/dialogues/quests.rpy", line 55, in execute
-    text quest_description:
-Exception: Cannot display None as text.
+  File "game/dialogues/firstDay.rpy", line 52, in script call
+    call intro_class_enter
+  File "game/dialogues/firstDay.rpy", line 58, in script
+    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
+  File "game/dialogues/firstDay.rpy", line 58, in <module>
+    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
+IndexError: string index out of range
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 62, in script
-    monika "[position]"
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1391, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1042, in do_display
-    display_say(who,
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 738, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2165, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\displayable.py", line 431, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\core.py", line 2683, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/dialogues/quests.rpy", line 44, in execute
-    screen quest_description:
-  File "game/dialogues/quests.rpy", line 44, in execute
-    screen quest_description:
-  File "game/dialogues/quests.rpy", line 49, in execute
-    window:
-  File "game/dialogues/quests.rpy", line 55, in execute
-    text quest_description:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\text\text.py", line 1717, in __init__
-    raise Exception("Cannot display {0!r} as text.".format(i))
-Exception: Cannot display None as text.
+  File "game/dialogues/firstDay.rpy", line 52, in script call
+    call intro_class_enter
+  File "game/dialogues/firstDay.rpy", line 58, in script
+    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/dialogues/firstDay.rpy", line 58, in <module>
+    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
+IndexError: string index out of range
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.2.0.24012702
 Staszic The Game 1.0
-Tue Mar 19 08:24:22 2024
+Sun Mar 24 18:48:41 2024

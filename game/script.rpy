@@ -19,28 +19,28 @@ screen button_right():
         xalign 1.0
         yalign 0.5
         background Color("#66cc00")
-        text "Click Me"
+        text "Right"
         action Jump("add")
 screen button_left():
     button:
         xalign 0.0
         yalign 0.5
         background Color("#66cc00")
-        text "Click Me"
+        text "Left"
         action Jump("sub")
 screen button_up():
     button:
         xalign 0.5
         yalign 0.0
         background Color("#66cc00")
-        text "Click Me"
+        text "Up"
         action Jump("up")
 screen button_down():
     button:
         xalign 0.5
         yalign 0.7
         background Color("#66cc00")
-        text "Click Me"
+        text "Down"
         action Jump("down")
 
 

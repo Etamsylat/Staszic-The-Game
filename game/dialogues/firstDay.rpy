@@ -49,8 +49,21 @@ label intro_name_class:
     somek "To Jak masz na imie?"
     $ playerName = renpy.input("Wpisz imię:")
     somek "A, z której jesteś klasy?"
-    $ classNumber = renpy.input("Wpisz Klase:")
+    call intro_class_enter
+    
     jump intro_sksQuest
+
+label intro_class_enter:
+    $ classNumber = renpy.input("Wpisz Klase:")
+    if len(classNumber)==2:
+        if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
+            if classNumber[1]=="a" or classNumber[1]=="A" or classNumber[1]=="b" or classNumber[1]=="B" or classNumber[1]=="c" or classNumber[1]=="C" or classNumber[1]=="d" or classNumber[1]=="D":
+            
+                return
+    
+    somek "Nie kłam, nie ma takiej"
+    jump intro_class_enter
+    
 
 label intro_sksQuest:
     somek "A, właśnie. Jak byś miał czas dzisiaj po lekcjach, to zapraszam na SKS'y z koszykówki. Możesz zapisać się u dowolnego nauczyciela WFu. Jesteś wysokiego, więc na pewno przydasz się do naszego zespołu. "
