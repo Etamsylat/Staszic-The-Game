@@ -1,11 +1,11 @@
-2024-03-24 17:45:51 UTC
+2024-03-26 22:16:57 UTC
 Windows-10-10.0.19045
 Ren'Py 8.2.0.24012702
 
-Early init took 0.08s
+Early init took 0.15s
 Loading error handling took 0.03s
 Loading script took 0.30s
-Loading save slot metadata took 0.04s
+Loading save slot metadata took 0.06s
 Loading persistent took 0.00s
 Running init code took 0.07s
 Loading analysis data took 0.02s
@@ -20,14 +20,14 @@ Initial gc took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.26s
+Creating interface object took 0.23s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.07s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -44,9 +44,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 43.93s
+Early init took 49.53s
 Loading error handling took 0.03s
-Loading script took 0.16s
+Loading script took 0.20s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -58,302 +58,7 @@ Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Sta
 Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.26s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 512.15'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]="":
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/dialogues/firstDay.rpy, line 60)
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]="":
-SyntaxError: invalid syntax (game/dialogues/firstDay.rpy, line 60)
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]="":
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/dialogues/firstDay.rpy, line 60)
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]="":
-SyntaxError: invalid syntax (game/dialogues/firstDay.rpy, line 60)
-Resetting cache.
-Early init took 78.03s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.26s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 512.15'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]=="":
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[3]=="":
-IndexError: string index out of range
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]=="":
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[3]=="":
-IndexError: string index out of range
-Resetting cache.
-Early init took 90.67s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.25s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 512.15'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]==null:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[3]==null:
-IndexError: string index out of range
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[3]==null:
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[3]==null:
-IndexError: string index out of range
-Resetting cache.
-Early init took 104.53s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.27s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 512.15'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[2]==null:
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[2]==null:
-NameError: name 'null' is not defined
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 60, in script
-    if classNumber[2]==null:
-  File "game/dialogues/firstDay.rpy", line 60, in <module>
-    if classNumber[2]==null:
-NameError: name 'null' is not defined
-Resetting cache.
-Early init took 164.11s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
+Initial gc took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
@@ -368,73 +73,7 @@ Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Fullscreen mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 512.15'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 58, in script
-    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 1842, in execute
-    if renpy.python.py_eval(condition):
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/dialogues/firstDay.rpy", line 58, in <module>
-    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
-IndexError: string index out of range
-
-While running game code:
-  File "game/dialogues/firstDay.rpy", line 52, in script call
-    call intro_class_enter
-  File "game/dialogues/firstDay.rpy", line 58, in script
-    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
-  File "game/dialogues/firstDay.rpy", line 58, in <module>
-    if classNumber[0]=="1" or classNumber[0]=="2" or classNumber[0]=="3" or classNumber[0]=="4" :
-IndexError: string index out of range
-Resetting cache.
-Early init took 199.32s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.36s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -453,3 +92,363 @@ Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    pozniak "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 575, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 464, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'pozniak' is not defined.
+
+While running game code:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    pozniak "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+Exception: Sayer 'pozniak' is not defined.
+Resetting cache.
+Early init took 166.22s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.27s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 512.15'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1376, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'playerName' is not defined.
+
+While running game code:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+NameError: Name 'playerName' is not defined.
+Resetting cache.
+Early init took 186.14s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.26s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 512.15'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1376, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'playerName' is not defined.
+
+While running game code:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+NameError: Name 'playerName' is not defined.
+
+Full traceback:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1376, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'playerName' is not defined.
+
+While running game code:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+NameError: Name 'playerName' is not defined.
+
+Full traceback:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 2557, in execute
+    Say.execute(self)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\ast.py", line 615, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\exports.py", line 1491, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\defaultstore.py", line 419, in say
+    who(what, *args, interact=interact, **kwargs)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1376, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1290, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\character.py", line 1270, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 368, in substitute
+    s = interpolate(s, kwargs) # type: ignore
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 86, in interpolate
+    raise e
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 78, in interpolate
+    value = renpy.python.py_eval(code, {}, scope)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "<none>", line 1, in <module>
+  File "D:\renpy\renpy-8.2.0-sdk\renpy\substitutions.py", line 310, in __getitem__
+    raise NameError("Name '{}' is not defined.".format(key))
+NameError: Name 'playerName' is not defined.
+
+While running game code:
+  File "game/dialogues/biologia.rpy", line 7, in script
+    "pozniak" "Dobra, mamy 3 eksperymenty do zrobienia. [playerName], który chcesz ty robić?"
+NameError: Name 'playerName' is not defined.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 246.01s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.08s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.29s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 512.15'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 299.82s
+Loading error handling took 0.02s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\SECH\\AppData\\Roaming/RenPy/backups\\Staszic The Game':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.24s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Fullscreen mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce GTX 1650 Ti/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 512.15'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1080) drawable=(1920, 1080)
+Maximum texture size: 4096x4096
