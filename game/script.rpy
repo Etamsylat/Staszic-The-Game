@@ -6,6 +6,10 @@ define somek = Character(name="Tomek Starczyński")
 define popi = Character(name="Małgorzata Popławska")
 define ssporon = Character(name="Kazimierz Sporoń")
 define mroczny = Character(name="Michał Sporoń")
+define nowak = Character(name="Dariusz Nowak")
+define klasa = Character(name="Klasa")
+define wermin = Character(name="Kuba")
+
 
 
 

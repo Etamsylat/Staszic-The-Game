@@ -149,7 +149,14 @@ label corridor_15:
     if "key" in inventory_items:
         jump mrocznyBackWithKey
     else:
-        jump passing
+        "czy chcesz wejsc do klasy?"
+        menu:
+            "tak":
+                jump matematyka_start
+            "nie":
+                jump passing
+            
+       
 
 
 label corridor_16:
@@ -170,7 +177,12 @@ label corridor_19:
 
 label corridor_20:
     scene bg_20
-    jump passing
+    "czy chcesz wejsc do klasy?"
+    menu:
+        "tak":
+            jump biola1
+        "nie":
+            jump passing
 
 label corridor_21:
     scene bg_21
