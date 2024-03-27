@@ -1,74 +1,13 @@
 define position = 0
 
-label sub:
-    if position == 26:
-        $ position = 28
-    elif position != 4 and position != 9 and position != 15 and position != 21:
-        $ position = position + 1
-    jump changeBg
 
-label add:
-    if position == 23:
-        $ position = 2
-    elif position == 28:
-        $ position = 26
-    elif position != 0 and position != 5 and position != 10 and position != 16:
-        $ position = position - 1
-    jump changeBg
-
-label up:
-    if position == 2:
-        $ position = 7
-    elif position == 7:
-        $ position = 12
-    elif position == 12:
-        $ position = 18
-    elif position == 26:
-        $ position = 27
-    jump changeBg
-
-label down:
-    if position == 7:
-        $ position = 2
-    elif position == 12:
-        $ position = 7
-    elif position == 18:
-        $ position = 12
-    elif position == 27:
-        $ position = 26
-    jump changeBg
-
-label changeBg:
-    call show_buttons
-    $ renpy.jump("corridor_" + str(position))
     
 label hide_buttons:
-    hide screen button_right
-    hide screen button_left
-    hide screen button_up
-    hide screen button_down
     hide screen inventory_display_toggle
     hide screen quests_display_toggle
     return
 
 label show_buttons:
-    if position != 4 and position != 9 and position != 15 and position != 21 and position != 27 and position != 28:
-        show screen button_left
-    else:
-        hide screen button_left
-    if position != 0 and position != 5 and position != 10 and position != 16 and position != 27:
-        show screen button_right
-    else:
-        hide screen button_right
-    if position == 2 or position == 7 or position == 12 or position == 26:
-        show screen button_up
-    else:
-        hide screen button_up
-    if position == 18 or position == 7 or position == 12 or position == 27:
-        show screen button_down
-    else:
-        hide screen button_down
-
     show screen inventory_display_toggle
     show screen quests_display_toggle
     return 
